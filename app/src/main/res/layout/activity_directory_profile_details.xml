@@ -1,0 +1,227 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--<android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:visibility="gone"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />-->
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginTop="46dp"
+                android:id="@+id/userimag"
+                android:layout_width="144dp"
+                android:layout_height="144dp"
+                android:layout_marginStart="108dp"
+                android:layout_marginEnd="108dp"
+                android:src="@drawable/icon_profile_48" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userimag"
+                android:layout_centerInParent="true"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="Balraj"
+                android:textColor="#333333"
+                android:textSize="24sp"
+                android:textStyle="normal" />
+
+
+            <RatingBar
+                android:layout_marginTop="16dp"
+                android:id="@+id/ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username"
+                android:layout_centerInParent="true"
+                android:max="5"
+                android:numStars="5" />
+
+            <RelativeLayout
+                android:layout_marginTop="82dp"
+                android:id="@+id/fav"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ratingbar"
+                android:layout_centerInParent="true"
+
+                >
+
+                <ImageView
+
+                    android:id="@+id/favourite"
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/heart" />
+
+                <TextView
+                    android:id="@+id/follow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/favourite"
+                    android:text="Following"
+                    android:textColor="#0a2d48"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/counts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fav"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/fcount"
+                    android:layout_width="57dp"
+                    android:layout_height="41dp"
+                    android:layout_marginStart="30dp"
+                    android:text="270"
+                    android:textSize="34sp" />
+
+                <TextView
+                    android:id="@+id/post"
+                    android:layout_width="57dp"
+                    android:layout_height="41dp"
+                    android:layout_marginStart="75dp"
+                    android:layout_toRightOf="@+id/fcount"
+                    android:text="14"
+                    android:textSize="34sp" />
+
+                <TextView
+                    android:id="@+id/rating"
+                    android:layout_width="57dp"
+                    android:layout_height="41dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="30dp"
+                    android:text="4/5"
+                    android:textSize="34sp" />
+
+                <TextView
+                    android:id="@+id/ftext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fcount"
+                    android:layout_marginStart="30dp"
+                    android:text="Followers"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#999999"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:id="@+id/posttext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/post"
+                    android:layout_marginStart="75dp"
+                    android:layout_toRightOf="@+id/ftext"
+                    android:text="Posts"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#999999"
+                    android:gravity="center_horizontal"  />
+
+                <TextView
+                    android:id="@+id/ratingtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rating"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="18dp"
+                    android:text="Rating"
+                    android:layout_marginEnd="45dp"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#999999"
+                    android:gravity="center_horizontal"  />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/counts"
+                android:layout_marginTop="36dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="sans-serif"
+                    android:text="About me"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                    android:textColor="#999999"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/desc"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="sans-serif"
+                    android:text="My previous posts"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Lorem Ipsum is simply dummy text "
+                    android:textColor="#999999"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

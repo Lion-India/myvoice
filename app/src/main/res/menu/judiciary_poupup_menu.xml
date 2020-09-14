@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/bookmarks"
+        android:enabled="true"
+        android:icon="@drawable/bookmark"
+        android:title="Give me Rating"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/mypost"
+        android:enabled="true"
+        android:icon="@drawable/posts"
+        android:title="My Posts"
+        app:showAsAction="ifRoom" />
+
+
+    <item
+        android:id="@+id/thoughts"
+        android:enabled="true"
+        android:icon="@drawable/thought"
+        android:title="Share Thoughts"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/follow"
+        android:enabled="true"
+        android:icon="@drawable/heart"
+        android:title="Follow"
+        android:checkable="true"
+        app:showAsAction="ifRoom" />
+
+</menu>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/bookmarks"
+        android:enabled="true"
+        android:icon="@drawable/icon_bookmark_blue"
+        android:title="Book Mark"
+        app:showAsAction="ifRoom" />
+    <!--<item
+        android:id="@+id/analytics"
+        android:enabled="true"
+        android:icon="@drawable/judiciary"
+        android:title="Analytics"
+        app:showAsAction="ifRoom" />
+
+
+    <item
+        android:id="@+id/thoughts"
+        android:enabled="true"
+        android:icon="@drawable/thought"
+        android:title="Submit Thoughts"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/edit"
+        android:enabled="true"
+        android:icon="@drawable/notification"
+        android:title="Edit"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/delete"
+        android:enabled="true"
+        android:icon="@drawable/news"
+        android:title="Delete"
+        app:showAsAction="ifRoom" />-->
+</menu>

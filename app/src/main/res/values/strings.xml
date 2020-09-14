@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">World of Wealth</string>
+
+    <!--<string name="splash_app_name">World\n \u0020\u0020of\nWealth</string>-->
+
+    <string name="splash_app_name"><i><big>W</big></i>orld\n<i><big>O</big></i>f\n<i><big>W</big></i>ealth</string>
+
+    <string name="facebook_app_id">1722650441213604</string>
+    <string name="fb_login_protocol_scheme">1722650441213604</string>
+
+    <!--<string name="truecaller_appkey">PjRc560f0da3dd5ea4fc3b3745362d4cd23e6</string>-->
+    <string name="truecaller_appkey">eSSLz0dae939e5ca44bc5b499af1544d1a64d</string>
+
+    <string name="news">News</string>
+    <string name="celebs">Celebs</string>
+    <string name="judiciary">Law</string>
+    <string name="legislators">Students</string>
+    <string name="leaders">Leaders</string>
+    <string name="lawMakers">Lawmakers</string>
+    <string name="myvoice">My voice</string>
+    <string name="scholars">Scholars</string>
+    <string name="ngos">NGO\'s</string>
+    <string name="topScore">Top Score</string>
+    <string name="trending">Trending</string>
+    <string name="enterprises">Enterprises</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Log Out</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="posts">Create Post</string>
+    <string name="interviews">Interview</string>
+    <string name="thoughts">Contact Admin</string>
+    <string name="directory">Directory</string>
+    <string name="savedarticles">Bookmark Articles</string>
+    <string name="termsconditions">Terms and Conditions</string>
+    <string name="about">About Wealth</string>
+    <string name="terms">Terms and Conditions</string>
+    <string name="please_wait">Please wait</string>
+    <string name="something_went_wrong">Some thing went wrong</string>
+    <string name="next">Next</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone">Mobile No</string>
+    <string name="email">Email</string>
+    <string name="dob">DOB</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="register">Register</string>
+    <string name="already_login">Already with us?</string>
+    <string name="enter_fname">Enter First Name</string>
+    <string name="enter_lname">Enter Last Name</string>
+    <string name="enter_phone">Enter Mobile No</string>
+    <string name="error_email">Enter valid Email</string>
+    <string name="error_field">Password should be greater than 4 characters</string>
+    <string name="error_password">Passwords not matched</string>
+    <string name="error_date">Select valid DOB</string>
+    <string name="error_dateofbirth">Enter valid Year</string>
+    <string name="otp_sent">OTP Sent to the Entered Mobile Number</string>
+    <string name="incorrect_otp">Incorrect OTP</string>
+    <string name="registered_success">Registered Successfully</string>
+    <string name="participants">Participants</string>
+    <string name="notifications">Notification</string>
+    <string name="appUrl">https://play.google.com/store/apps/details?id=app.com.lion</string>
+
+
+    <string-array name="string_array_resolutions">
+        <item>160x120</item>
+        // 120P
+        <item>320x180</item>
+        // 180P
+        <item>320x240</item>
+        // 240P the default one
+        <item>640x360</item>
+        // 360P
+        <item>640x480</item>
+        // 480P
+        <item>1280x720</item>
+        // 720P
+    </string-array>
+
+    <string-array name="string_array_frame_rate">
+        <item>15</item>
+        // 120P
+        <item>15</item>
+        // 180P
+        <item>15</item>
+        // 240P
+        <item>15</item>
+        // 360P
+        <item>15</item>
+        // 480P
+        <item>15</item>
+        // 720P
+    </string-array>
+
+    <string name="label_title_resolution">Resolution\n(Width * Height)</string>
+    <string name="label_title_frame_rate">Frame Rate\n(fps)</string>
+    <string name="label_confirm">Confirm</string>
+    <string name="publish_interview">Publish Interview</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="private_app_id">3303c5ef3743427a84baaa7dc130eacb</string>
+    <string name="join_as_broadcaster">Join as  Broadcaster</string>
+    <string name="interview_closed">Interview Closed</string>
+    <string name="interview_not_started">Interview not started by Host</string>
+    <string name="join_as_audience">Join as Audience</string>
+    <string name="success">Success</string>
+    <string name="title_activity_saved_aritcal">SavedAritcalActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="select_user">Please Select users</string>
+    <string name="interview_already_exists">Interview Already Exsists</string>
+    <string name="people_allowed">Can\'t select more than 3</string>
+    <string name="enter_title">Enter Title</string>
+    <string name="select_start_date">Select Start Date</string>
+    <string name="select_start_time">Select Start Time</string>
+    <string name="select_end_time">Select End Time</string>
+    <string name="select_users">Select Users</string>
+    <string name="enter_desc">Enter Description</string>
+    <string name="create_interview">Create Interview</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="DirectoryProfileDetails">ProfileDetails</string>
+    <string name="enter_comments">Please Enter Comments</string>
+    <string name="nodata">No data found</string>
+    <string name="post_comments">Your comment is very valuable and will be treated as confidential and it will not displayed in the application</string>
+    <string name="update">Admin</string>
+
+</resources>

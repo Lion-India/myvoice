@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnLayout"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <EditText
+                android:id="@+id/ititle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="   Title*" />
+
+            <EditText
+
+                android:id="@+id/idesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ititle"
+                android:layout_marginTop="20dp"
+                android:hint="   Description" />
+
+            <EditText
+
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idesc"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:drawableRight="@drawable/ic_date_range_black_24dp"
+                android:focusableInTouchMode="false"
+                android:hint="   Date not set " />
+
+            <EditText
+                android:id="@+id/stime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/date"
+                android:layout_marginTop="20dp"
+                android:drawableRight="@drawable/ic_access_time_black_24dp"
+                android:focusable="false"
+                android:hint="@string/select_start_time" />
+
+            <EditText
+                android:id="@+id/etime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/stime"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:drawableRight="@drawable/ic_access_time_black_24dp"
+                android:focusable="false"
+                android:hint="@string/select_end_time" />
+
+            <EditText
+                android:id="@+id/invite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etime"
+                android:layout_marginTop="20dp"
+                android:drawableRight="@drawable/ic_account_circle_black_24dp"
+                android:hint="  Invites "
+                android:visibility="gone" />
+
+
+            <EditText
+                android:id="@+id/inputSearch"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/invite"
+                android:hint="Search by name or mobile" />
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/inputSearch">
+
+            </ListView>
+
+
+            </RelativeLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/btnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:background="#0a2d48"
+            android:text="SAVE"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:text="CANCEL"
+            android:textColor="#0a2d48"
+
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

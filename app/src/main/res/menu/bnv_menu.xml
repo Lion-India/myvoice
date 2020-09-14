@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/stars"
+        android:icon="@drawable/icon_legislator_blue"
+        android:title="@string/lawMakers" />
+
+    <item
+        android:id="@+id/legislators"
+        android:icon="@drawable/icon_star"
+        android:title="@string/myvoice" />
+
+    <item
+        android:id="@+id/topscore"
+        android:title="@string/topScore" />
+
+    <item
+        android:id="@+id/ngo"
+        android:icon="@drawable/icon_ngo_blue"
+        android:title="@string/enterprises" />
+
+    <item
+        android:id="@+id/judiciary"
+        android:icon="@drawable/icon_judiciary_blue"
+        android:title="@string/scholars" />
+
+</menu>

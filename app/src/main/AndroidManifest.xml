@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="app.com.worldofwealth">
+
+    <uses-sdk tools:overrideLibrary="com.truecaller.android.sdk" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name="app.com.worldofwealth.agora.openlive.AGApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_trending"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_trending"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="app.com.worldofwealth.NotificationSettingsActivity"></activity>
+        <activity
+            android:name="app.com.worldofwealth.FullScreenVideoActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="app.com.worldofwealth.PostThoughts" />
+        <activity android:name="app.com.worldofwealth.ThoughtsActivity" />
+        <activity android:name="app.com.worldofwealth.PostComments" />
+        <activity android:name="app.com.worldofwealth.CommentsActivity" />
+        <activity
+            android:name="app.com.worldofwealth.CreateInterviewActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="app.com.worldofwealth.SavedAritcalActivity"
+            android:label="@string/title_activity_saved_aritcal" />
+        <activity
+            android:name="app.com.worldofwealth.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="app.com.worldofwealth.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="app.com.worldofwealth.RegisterActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="app.com.worldofwealth.LoginActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="app.com.worldofwealth.OtpVerifiction" />
+        <activity android:name="app.com.worldofwealth.InterviewActivity" />
+        <activity android:name="app.com.worldofwealth.DescriptionActivity" />
+        <activity android:name="app.com.worldofwealth.DirectoryProfileDetails" />
+        <activity
+            android:name="app.com.worldofwealth.agora.openlive.ui.SettingsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="app.com.worldofwealth.agora.openlive.ui.LiveRoomActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="app.com.worldofwealth.agora.openlive.ui.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name="app.com.worldofwealth.agora.openlive.ui.VideoPublishActivity" />
+        <activity android:name="app.com.worldofwealth.NewsWebViewActivity" />
+        <activity android:name="app.com.worldofwealth.DirectoryActivity" />
+        <activity android:name="app.com.worldofwealth.AboutActivity" />
+        <activity android:name="app.com.worldofwealth.TermsAndConditionsActivity" />
+        <activity android:name="app.com.worldofwealth.CreatePostActivity" />
+        <activity android:name="app.com.worldofwealth.PostPreview" /> <!-- Firebase Notifications -->
+        <activity android:name="app.com.worldofwealth.UpdateActivity" />
+
+        <service android:name="app.com.worldofwealth.Services.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="app.com.worldofwealth.Services.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name="app.com.worldofwealth.OldLoginActivity" />
+
+        <meta-data
+            android:name="com.truecaller.android.sdk.PartnerKey"
+            android:value="@string/truecaller_appkey" />
+    </application>
+
+</manifest>

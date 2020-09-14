@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#46e0eb">
+
+    <TextView
+        android:id="@+id/verificationCodeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_horizontal"
+        android:text="Verification Code"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/otpSendText"
+        android:layout_width="232dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="72dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:text="Please type the verification code sent
+to +91 988 0098800"
+        android:textColor="#00777f"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verificationCodeText" />
+
+
+    <EditText
+        android:id="@+id/otpFirstNumberText"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/otp_verification"
+        android:focusable="true"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:inputType="number"
+        android:maxLength="1"
+
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otpSendText" />
+
+    <EditText
+        android:id="@+id/otpSecondNumberText"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/otp_verification"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/otpFirstNumberText"
+        app:layout_constraintTop_toBottomOf="@+id/otpSendText" />
+
+    <EditText
+        android:id="@+id/otpThirdNumberText"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/otp_verification"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/otpSecondNumberText"
+        app:layout_constraintTop_toBottomOf="@+id/otpSendText" />
+
+    <EditText
+        android:id="@+id/otpFourthNumberText"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/otp_verification"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/otpThirdNumberText"
+        app:layout_constraintTop_toBottomOf="@+id/otpSendText" />
+
+    <TextView
+        android:id="@+id/resendOtpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_horizontal"
+        android:text="Resend OTP?"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otpSecondNumberText" />
+
+    <Button
+
+        android:id="@+id/verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/register_button"
+        android:text="Verify"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resendOtpText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/singleMessageContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+
+                android:id="@+id/userimag"
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_account_circle_black_24dp" />
+
+            <TextView
+                android:id="@+id/singleMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dip"
+                android:layout_toRightOf="@+id/userimag"
+                android:background="@drawable/register_button"
+                android:paddingLeft="10dip"
+                android:text="Hello bubbles!"
+                android:textColor="@android:color/primary_text_light" />
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_below="@+id/singleMessage"
+                android:layout_toEndOf="@+id/singleMessage"
+                android:id="@+id/recived"
+                android:layout_marginEnd="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_account_circle_black_24dp"/>
+            <TextView
+                android:id="@+id/date"
+                android:textColor="@color/black"
+                android:layout_below="@+id/singleMessage"
+                android:layout_toEndOf="@+id/recived"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2:00 PM"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/singleMessageContainer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="Orientation">
+
+            <ImageView
+                android:id="@+id/userimag1"
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/register_button"
+
+                />
+
+            <TextView
+                android:id="@+id/singleMessage1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dip"
+                android:layout_toLeftOf="@+id/userimag1"
+                android:background="@drawable/ic_account_circle_black_24dp"
+                android:text="Hello bubbles!"
+                android:textColor="@android:color/primary_text_light" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

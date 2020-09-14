@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp">
+        <ImageView
+            android:id="@+id/puserimg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon_profile_48" />
+
+        <TextView
+            android:id="@+id/pusername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_toLeftOf="@+id/ipmenu"
+            android:layout_toRightOf="@+id/puserimg"
+            android:fontFamily="sans-serif"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            tools:text="Guruprasad B M" />
+
+        <TextView
+            android:id="@+id/pusertype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pusername"
+            android:layout_marginLeft="16dp"
+            android:layout_toLeftOf="@+id/ipmenu"
+            android:layout_toRightOf="@+id/puserimg"
+            android:fontFamily="sans-serif"
+            android:textColor="#999999"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            tools:text="Advocate general" />
+
+        <ImageView
+            android:id="@+id/ipmenu"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/icon_menu_blue" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pusertype"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardPreventCornerOverlap="true"
+            card_view:cardUseCompatPadding="false">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:id="@+id/re1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/postbookamrk"
+                        android:layout_width="20dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/icon_bookmark_blue"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/postimage"
+                        android:layout_width="match_parent"
+                        android:layout_height="194dp"
+                        android:maxHeight="194dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/indiaflag"
+                        android:visibility="gone" />
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/videoImage"
+        android:layout_width="match_parent"
+        android:layout_height="194dp"
+        android:maxHeight="194dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/indiaflag"
+        android:visibility="gone"
+        />
+    <ImageView
+        android:id="@+id/playImageView"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:src="@drawable/ic_play_circle_outline_black_24dp"
+        />
+</RelativeLayout>
+
+
+                    <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+                        android:id="@+id/player_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="194dp"
+                        android:maxHeight="194dp"
+                        android:visibility="gone" />
+
+
+                    <hb.xvideoplayer.MxVideoPlayerWidget
+                        android:id="@+id/mpw_video_player"
+                        android:layout_width="match_parent"
+                        android:layout_height="194dp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/posttitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/re1"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="16dp"
+                    android:maxLines="1"
+                    android:textColor="#555555"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    tools:text="The Role of Indian Judiciary In Promoting Good Governance" />
+
+                <TextView
+                    android:id="@+id/postdesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/posttitle"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="60dp"
+                    android:fontFamily="sans-serif"
+                    android:maxLines="3"
+                    android:textColor="#555555"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    tools:text="In modern period all countries adopting democratic polity and welfare state concepts, where the administrative authorities are …" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/ifab"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/posttitle"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="#0a2d48"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    android:visibility="gone"
+                    app:fabCustomSize="40dp" />
+
+                <TextView
+                    android:id="@+id/postdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/postdesc"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="end"
+                    android:textColor="#999999"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    tools:text="2d" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/likelayout"
+        layout="@layout/like_dislike"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/likelayout"
+        android:layout_marginTop="2dp"
+        android:background="@color/grey" />
+</RelativeLayout>

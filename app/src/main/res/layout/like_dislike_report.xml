@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="vertical">
+
+    <!--<TextView
+        android:id="@+id/tscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textColor="#999999"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        tools:text="The LION Score:\n
+5,500 Likes" />-->
+
+    <ImageView
+        android:id="@+id/ilike"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="60dp"
+        android:layout_toLeftOf="@+id/idislike"
+        android:src="@drawable/icon_like_grey" />
+    <TextView
+        android:id="@+id/likecounttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/idislike"
+        android:layout_marginRight="50dp"/>
+
+
+    <ImageView
+        android:id="@+id/idislike"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/icomments"
+        android:src="@drawable/icon_dislike_grey" />
+
+    <TextView
+        android:id="@+id/dislikecounttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/icomments"
+        android:layout_marginRight="40dp"/>
+
+    <ImageView
+        android:id="@+id/icomments"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/ishare"
+        android:layout_marginRight="60dp"
+        android:src="@drawable/icon_comments_grey" />
+
+    <TextView
+        android:id="@+id/commentscounttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/ishare"
+        android:layout_marginRight="50dp"/>
+
+    <ImageView
+        android:id="@+id/ishare"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="80dp"
+        android:src="@drawable/icon_share_grey" />
+
+    <ImageView
+        android:id="@+id/ireport"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/report" />
+</RelativeLayout>

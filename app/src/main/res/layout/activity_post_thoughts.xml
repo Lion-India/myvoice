@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".PostComments">
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:text="Subject of your comments"
+        />
+    <EditText
+        android:layout_marginStart="10dp"
+        android:id="@+id/posttitleEdittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/title1"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:maxLines="3"/>
+    <TextView
+
+        android:id="@+id/commentstextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal"
+        android:textColor="#b5b5b5"
+        android:text="Comments"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/posttitleEdittext"
+        />
+    <EditText
+        android:layout_below="@+id/commentstextview"
+        android:id="@+id/postcommentsEdittext"
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/buttonpostcomment"
+        android:background="@drawable/register_button"
+        android:textColor="#0a2d48"
+        android:text="Submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</RelativeLayout>
