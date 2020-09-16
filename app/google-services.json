@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "524902056423",
+    "firebase_url": "https://lion-india-1586440225580.firebaseio.com",
+    "project_id": "lion-india-1586440225580",
+    "storage_bucket": "lion-india-1586440225580.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:524902056423:android:8a1ab6e152973188dc7d42",
+        "android_client_info": {
+          "package_name": "app.com.worldofwealth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "524902056423-359gm5o7hl6h2j7teof8cju3iaujf8g0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.com.worldofwealth",
+            "certificate_hash": "36d3bbdaee359ec6db861b9d629636fb9c334bf0"
+          }
+        },
+        {
+          "client_id": "524902056423-9nrp8ri256qveirqcov06otv28u4olp5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfToPhNj4uoile-fSpVQIcJr8XzYM94nk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "524902056423-9nrp8ri256qveirqcov06otv28u4olp5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

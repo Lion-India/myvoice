@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="aqua_marine">#46e0eb</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey">#e5e5e5</color>
+    <color name="input_login">#222222</color>
+    <color name="input_login_hint">#999999</color>
+    <color name="btn_login_bg">#eceef1</color>
+    <color name="lightColorAccent">#30FF4081</color>
+    <color name="agora_blue">#FF00A0EB</color>
+</resources>

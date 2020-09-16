@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_margin="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pusertype"
+        android:background="@color/white"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardPreventCornerOverlap="true"
+        card_view:cardUseCompatPadding="false">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                tools:text="Interview Title" />
+
+            <TextView
+                android:id="@+id/tdesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tname"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#999999"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                tools:text="Interview Desc" />
+
+            <TextView
+                android:id="@+id/tcreatedby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tdesc"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                tools:text="Interview Created By" />
+
+            <TextView
+                android:id="@+id/tparticipants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tcreatedby"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/participants"
+                android:textColor="#999999" />
+
+            <ListView
+                android:id="@+id/lparticipants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tparticipants"
+                android:layout_marginTop="5dp"></ListView>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button_join"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/register_button"
+        android:onClick="onClickJoin"
+        android:text="@string/join_as_broadcaster" />
+</RelativeLayout>

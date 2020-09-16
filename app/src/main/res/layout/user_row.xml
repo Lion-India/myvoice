@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <TextView
+            android:id="@+id/initial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16.5dp"
+            android:fontFamily="sans-serif"
+            android:text="R"
+            android:textColor="#0a2d48"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/userimag"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_margin="16dp"
+            android:layout_toRightOf="@+id/initial"
+            android:src="@drawable/icon_profile_48" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@+id/userimag"
+            android:fontFamily="sans-serif"
+            android:text="Rajshekar Reddy"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/userimag"
+            android:fontFamily="sans-serif"
+            android:text="current/Past portfolio"
+            android:textColor="#999999"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/icon_menu_blue"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

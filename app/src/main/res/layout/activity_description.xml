@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DescriptionActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <RelativeLayout
+            android:id="@+id/re1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/postimage"
+                android:layout_width="match_parent"
+                android:layout_height="194dp"
+                android:maxHeight="194dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/indiaflag"
+                android:visibility="gone" />
+
+            <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+                android:id="@+id/player_view"
+                android:layout_width="match_parent"
+                android:layout_height="194dp"
+                android:maxHeight="194dp"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/puserimg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/re1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/icon_profile_48" />
+
+        <TextView
+            android:id="@+id/pusername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/re1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_toLeftOf="@+id/ipmenu"
+            android:layout_toRightOf="@+id/puserimg"
+            android:fontFamily="sans-serif"
+            android:text="Guruprasad B M"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            tools:text="Guruprasad B M" />
+
+        <TextView
+            android:id="@+id/pusertype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pusername"
+            android:layout_marginLeft="16dp"
+            android:layout_toLeftOf="@+id/ipmenu"
+            android:layout_toRightOf="@+id/puserimg"
+            android:fontFamily="sans-serif"
+            android:text="Advocate general"
+            android:textColor="#999999"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            tools:text="Advocate general" />
+
+        <ImageView
+            android:id="@+id/ipmenu"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/re1"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="19dp"
+            android:src="@drawable/icon_menu_blue" />
+
+        <TextView
+            android:id="@+id/posttitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/puserimg"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="16dp"
+            android:maxLines="2"
+            android:text="The Role of Indian Judiciary In Promoting Good Governance"
+            android:textColor="#555555"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/postdesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/posttitle"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="sans-serif"
+            android:text="In modern period all countries adopting democratic polity and welfare state concepts, where the administrative authorities are vested with vast discretionary powers. The exercise of those powers often becomes subjective in the absence of specific guidelines etc. Hence the need for a control of the discretionary powers is essential to ensure that 'rule of law' exist in all governmental actions. The ultimate choice to victim from arbitrary action of the government is Judiciary. In recent years, courts have risen in power across the world, and the Indian Judiciary has rightly been pointed to as an example of this global trend. In many ways the Indian Court has become a court of good governance that sits in judgment over the rest of the Indian government."
+            android:textColor="#555555"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/postdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/postdesc"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif"
+            android:gravity="end"
+            android:textColor="#999999"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            tools:text="2d" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/view"
+            android:layout_below="@+id/postdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="end"
+            android:textStyle="normal"
+            android:text="View more..."/>
+
+
+
+
+        <include
+            android:id="@+id/likelayout"
+            layout="@layout/like_dislike"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp" />
+
+    </RelativeLayout>
+</ScrollView>

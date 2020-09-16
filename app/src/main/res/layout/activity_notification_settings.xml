@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/textnoti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:paddingLeft="3dp"
+        android:paddingTop="5dp"
+        android:singleLine="false"
+        android:text="If you don't want the notification, please check the below check box "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <CheckBox
+        android:id="@+id/notificationCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:text="Notification"
+        android:layout_below="@+id/textnoti"/>
+
+    <Button
+        android:id="@+id/updatebutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/register_button"
+        android:text="Update"
+        android:textColor="#0a2d48" />
+</RelativeLayout>
