@@ -88,6 +88,7 @@
         <activity android:name="app.com.worldofwealth.CreatePostActivity" />
         <activity android:name="app.com.worldofwealth.PostPreview" /> <!-- Firebase Notifications -->
         <activity android:name="app.com.worldofwealth.UpdateActivity" />
+        <activity android:name=".PrivacyPolicyActivity"/>
 
         <service android:name="app.com.worldofwealth.Services.MyFirebaseMessagingService">
             <intent-filter>

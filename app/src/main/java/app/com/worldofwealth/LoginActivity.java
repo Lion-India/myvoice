@@ -65,6 +65,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     ProgressDialog progressDialog;
     String gcm_code;
     DBHelper dbHelper;
+    TextView privacypolicy;
+    public static String appPolicy = "https://worldofwealth.azurewebsites.net/PrivacyPolicy";
+
 
 
     RadioButton radioMale, radioFemale;
@@ -109,7 +112,15 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         Intent intent = getIntent();
         gcm_code = intent.getStringExtra("Fcmkey");
         dbHelper = new DBHelper(LoginActivity.this);
-
+        privacypolicy = findViewById(R.id.privacypolicy);
+        privacypolicy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, PrivacyPolicyActivity.class);
+                intent.putExtra("weburl", appPolicy);
+                startActivity(intent);
+            }
+        });
 
 
 

@@ -10,6 +10,8 @@
 
     <!--<string name="truecaller_appkey">PjRc560f0da3dd5ea4fc3b3745362d4cd23e6</string>-->
     <string name="truecaller_appkey">VCK4285461c184ad0473a9cfa2445e19685b0</string>
+    <string name="privacypolicy"><u>Privacy Policy</u></string>
+    <string name="privacy">Privacy Policy</string>
 
     <string name="news">News</string>
     <string name="celebs">Celebs</string>
