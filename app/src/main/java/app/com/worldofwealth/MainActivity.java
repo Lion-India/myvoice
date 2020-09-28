@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity
     private BroadcastReceiver mRegistrationBroadcastReceiver;
     private static final String TAG = "MainActivity";
     String regId;
-    String navigation = "topscore";
+    String navigation = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -195,6 +195,7 @@ public class MainActivity extends AppCompatActivity
         //homeUpdateCount();
         //Default load fragment
         if (navigation != null && !navigation.isEmpty() && !navigation.equals("null")){
+            System.out.println(navigation);
             mBottomNavigationView.setSelectedItemId(R.id.legislators);
             Fragment fragment;
             toolbar.setTitle(getText(R.string.trending));

@@ -79,7 +79,7 @@ public class Interview implements Serializable {
     }
 
     String createdbyname;
-    boolean ispublished;
+   private boolean ispublished;
 
     public boolean isIspublished() {
         return ispublished;

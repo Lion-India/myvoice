@@ -72,7 +72,8 @@
     <string name="registered_success">Registered Successfully</string>
     <string name="participants">Participants</string>
     <string name="notifications">Notification</string>
-    <string name="appUrl">https://play.google.com/store/apps/details?id=app.com.lion</string>
+    <!--<string name="appUrl">https://play.google.com/store/apps/details?id=app.com.lion</string>-->
+    <string name="appUrl">https://play.google.com/store/apps/details?id=app.com.worldofwealth</string>
 
 
     <string-array name="string_array_resolutions">

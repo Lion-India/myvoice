@@ -116,7 +116,7 @@ public class InterviewActivity extends AppCompatActivity {
                             for (int i = 0; i < jarr.length(); i++) {
                                 JSONObject job = new JSONObject(jarr.get(i).toString());
                                 Interview interview = ParseStringtoOpinion(job);
-                                if (interview.isIspublished()==true) {
+                                if (interview.isIspublished()) {
                                     interviewlist.add(interview);
                                 }
                                 //interviewlist.add(interview);
