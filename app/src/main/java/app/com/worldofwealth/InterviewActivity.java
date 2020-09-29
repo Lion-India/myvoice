@@ -161,6 +161,7 @@ public class InterviewActivity extends AppCompatActivity {
             interview.setCreateddate(job.getString("createddate"));
             interview.setCreatedbytype(job.getString("createdbytype"));
             interview.setCreatedbyname(job.getString("createdbyname"));
+            interview.setCreatedbyimage(job.getString("createdbyimage"));
         } catch (Exception e) {
             e.printStackTrace();
         }

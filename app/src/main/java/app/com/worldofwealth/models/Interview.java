@@ -22,6 +22,16 @@ public class Interview implements Serializable {
     String createddate;
     String audiourl;
 
+    public String getCreatedbyimage() {
+        return createdbyimage;
+    }
+
+    public void setCreatedbyimage(String createdbyimage) {
+        this.createdbyimage = createdbyimage;
+    }
+
+    String createdbyimage;
+
     public String getVideothumbnailurl() {
         return videothumbnailurl;
     }

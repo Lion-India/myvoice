@@ -27,6 +27,9 @@ import app.com.worldofwealth.models.Interview;
 import app.com.worldofwealth.models.User;
 import app.com.worldofwealth.utils.CommonUtil;
 import app.com.worldofwealth.utils.DBHelper;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
@@ -55,7 +58,7 @@ public class InterViewAdapter extends RecyclerView.Adapter<InterViewAdapter.MyVi
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView ttitle, tdesc, tcreatedby, tusertype,tpostdate, tscore, likecounttext, dislikecounttext, commentscounttext;
-        ImageView ipostimage, tipmenu, like, dislike, comment, share;;
+        ImageView ipostimage, tipmenu, like, dislike, comment, share, puserimg;
         FloatingActionButton ifab;
         static MxVideoPlayer mpw_video_player;
 
@@ -78,7 +81,7 @@ public class InterViewAdapter extends RecyclerView.Adapter<InterViewAdapter.MyVi
             likecounttext = (TextView) view.findViewById(R.id.likecounttext);
             dislikecounttext = (TextView) view.findViewById(R.id.dislikecounttext);
             commentscounttext = (TextView) view.findViewById(R.id.commentscounttext);
-
+            puserimg = (ImageView) view.findViewById(R.id.puserimg);
         }
 
         public static void closeAllVideoes() {
@@ -175,6 +178,21 @@ public class InterViewAdapter extends RecyclerView.Adapter<InterViewAdapter.MyVi
             }
         } catch (Exception e) {
             e.printStackTrace();
+        }
+
+        //for userprofile image
+        String userImageUrl = interview.getCreatedbyimage();
+        if (userImageUrl != null && !userImageUrl.equals("null") && !userImageUrl.isEmpty()) {
+            Glide.with(this.context).load(interview.getCreatedbyimage())
+                    .apply(RequestOptions.circleCropTransform())
+                    .into(holder.puserimg);
+//            Glide.with(this.context)
+//                    .load(post.getCreatedbyimage()) // image url
+//                    .placeholder(R.drawable.background)
+//                    .error(R.drawable.background)
+//                    //.override(200, 200); // resizing
+//                    //  .centerCrop()
+//                    .into(holder.puserimg);
         }
 
 
@@ -376,6 +394,7 @@ public class InterViewAdapter extends RecyclerView.Adapter<InterViewAdapter.MyVi
             interview.setCreateddate(job.getString("createddate"));
             interview.setCreatedbytype(job.getString("createdbytype"));
             interview.setCreatedbyname(job.getString("createdbyname"));
+            interview.setCreatedbyimage(job.getString("createdbyimage"));
         } catch (Exception e) {
             e.printStackTrace();
         }
