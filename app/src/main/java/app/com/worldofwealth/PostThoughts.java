@@ -58,7 +58,7 @@ public class PostThoughts extends AppCompatActivity {
         postcommentsubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                   PostThoughtstoserver();
+                PostThoughtstoserver();
 
             }
         });
@@ -87,7 +87,12 @@ public class PostThoughts extends AppCompatActivity {
                     CommonUtil.mbaseurl + "Thought/PostThought", entity,
                     "application/json", getResponseHandler("postthought"));
             //System.out.println("inpu :" + jsonParams.toString());
-
+            progressDialog = new ProgressDialog(PostThoughts.this);
+            progressDialog.setMessage(getString(R.string.please_wait));
+            progressDialog.setTitle(getString(R.string.app_name));
+            progressDialog.show();
+            progressDialog.setCancelable(false);
+            progressDialog.setCanceledOnTouchOutside(false);
         } catch (Exception e) {
             System.err.println("Error in inserting" + e.toString());
 
@@ -104,13 +109,15 @@ public class PostThoughts extends AppCompatActivity {
                         JSONObject jsonObject = new JSONObject(response);
                         if (jsonObject.getString("Message").equals("Successfull")) {
                             showToast(getApplicationContext(), "Thanks, Your comments are posted to admin");
+                            progressDialog.cancel();
                             Intent intent = new Intent(PostThoughts.this,MainActivity.class);
                             startActivity(intent);
                         } else {
+                            progressDialog.cancel();
                             showToast(getApplicationContext(), getString(R.string.something_went_wrong));
                         }
                     }catch (Exception e){
-                        e.printStackTrace();
+                        progressDialog.cancel();e.printStackTrace();
                     }
                 }
 
